@@ -21,6 +21,8 @@ script:
  - if [ "uname -m" == "ppc64le" ]; then make -C ctest TARGET=POWER8 NUM_THREADS=32 $BTYPE; fi
  - if [ "uname -m" == "x86_64" ]; then make -C ctest TARGET=NEHALEM NUM_THREADS=32 $BTYPE; fi
  - if [ "uname -m" == "ppc64le" ]; then make -C utest TARGET=POWER8 NUM_THREADS=32 $BTYPE; fi
+ - if [ "uname -m" == "x86_64" ]; then make -C utest TARGET=NEHALEM NUM_THREADS=32 $BTYPE; fi
+
 
 # whitelist
 branches:
