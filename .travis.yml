@@ -2,7 +2,6 @@ language: c
 
 compiler:
   - gcc
-  - clang
 
 env:
  - TARGET_BOX=LINUX64 BTYPE="BINARY=64"
